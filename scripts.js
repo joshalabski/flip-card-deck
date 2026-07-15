@@ -10,6 +10,7 @@ const endScreen = document.getElementById("end-screen");
 const restartButton = document.getElementById("restart-btn");
 const totalDeck = document.getElementById("total-deck");
 const currentDeck = document.getElementById("current-deck");
+const progressFill = document.getElementById("progress-fill");
 
 
 //event listeners
@@ -71,6 +72,10 @@ function showCard() {
   backText.textContent = currentFlip.back;
 
   flipInner.classList.remove("flipped");
+
+  const progressPercent = (currentCardIndex / cardDeck.length) *100;
+
+  progressFill.style.width = progressPercent + "%";
 }
 
 function restartDeck() {
