@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Card deck</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+    <div class="screen active" id="start-screen">
+      <h1>Data Structures</h1>
+        <p>Click start to begin</p>
+
+        <button class="start-button" id="start-btn">
+          Start</button>
+    </div>
+
+    <div class="screen" id="study-screen">
+       <div class="flip-card-inner">
+         <label class="flipcard-front" id="flip-start">
+
+        <h2 id="front-text">What does a Flexbox do?</h2>
+      </label>
+
+        
+
+        <label class="flipcard-back" id="flip-second">
+        <h2 id="back-text">is a CSS layout tool that makes it easy to design flexible, responsive web layouts. </h2>
+      </label>
+      </div>
+
+      <button class="flip" id="flip-btn">
+          Flip 
+        </button>
+      </div>
+
+      <div class="screen" id="end-screen">
+        <h2>
+          Congrats you should be ready!
+        </h2>
+        <p>
+          Don't forget to study more! goodluck!
+        </p>
+
+        <button class="restart-button" id="restart-btn">
+          Restart Deck
+        </button>
+      </div>
+    </div> 
+    <script src="scripts.js"></script> 
+</body>
+</html>
