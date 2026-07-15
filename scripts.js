@@ -17,6 +17,9 @@ startButton.addEventListener("click", startFlip);
 flipNext.addEventListener("click", flipNextPage);
 restartButton.addEventListener("click", restartDeck);
 
+
+
+
 function startFlip() {
   startScreen.classList.remove("active");
   nextScreen.classList.add("active");
@@ -53,12 +56,15 @@ const cardDeck = [{
     back: "4. It provides alternative text description for screen readers and displays if the image fails to load."
 }];
 
+totalDeck.textContent = cardDeck.length;
+
 
 //FLIP CARD VARIABLES
 let currentCardIndex = 0;
 
 
 function showCard() {
+  currentDeck.textContent = currentCardIndex + 1;
   const currentFlip = cardDeck[currentCardIndex];
 
   frontText.textContent = currentFlip.front;
