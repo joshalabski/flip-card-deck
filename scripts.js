@@ -8,6 +8,8 @@ const frontText = document.getElementById("front-text");
 const backText = document.getElementById("back-text");
 const endScreen = document.getElementById("end-screen");
 const restartButton = document.getElementById("restart-btn");
+const totalDeck = document.getElementById("total-deck");
+const currentDeck = document.getElementById("current-deck");
 
 
 //event listeners
